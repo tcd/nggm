@@ -1,6 +1,8 @@
 # NGGM
 
-A Neo Geo background extraction tool. With just a few clicks, you can extract the backgrounds of Neo Geo games into animated gifs. Usually the hardest part is playing the game long enough to get the background you are interested in loaded into memory :)
+A Neo Geo background extraction tool. 
+With just a few clicks, you can extract the backgrounds of Neo Geo games into animated gifs. 
+Usually the hardest part is playing the game long enough to get the background you are interested in loaded into memory :)
 
 This image was created with the tool, as were many of the backgrounds at https://www.fgbg.art
 
@@ -8,7 +10,8 @@ This image was created with the tool, as were many of the backgrounds at https:/
 
 ## Status
 
-The tool now successfully extracts a lot of backgrounds. There is still much work to be done:
+The tool now successfully extracts a lot of backgrounds. 
+There is still much work to be done:
   
 TODO:
 
@@ -27,39 +30,46 @@ TODO:
 * loading indicator while downloading gngeo, which is about 3 megabytes
   * would also be nice to keep trimming the stuff out of gngeo that nggm doesn't need, to cut that 3 megs down more
 
-The tool can also extract character sprites pretty easily
-## How to use
-This is TODO
+The tool can also extract character sprites pretty easily.
 
-I will create detailed instructions as the tool matures. This tool proved to be a lot more work than I thought it would be, so it might be a while before it's really usable
+## How to use
+
+TODO: how to use
+
+I will create detailed instructions as the tool matures. 
+This tool proved to be a lot more work than I thought it would be, so it might be a while before it's really usable
 
 NOTE: gngeo is the emulator that is running, and it wants your ROM files to be in a very specific format. For me, my samsho2, mslug, kof94 and kof95 roms all work fine. But my aof, aof3, pulstar, etc ROMs do not load. I'll eventually fix this.
 
-game controls:
+### Game Controls
 
-player one
+#### player one
 
-* directions: arrow keys
-* start: 1
-* coin: 3
-* a: z
-* b: x
-* c: a
-* d: s
+* Directions: arrow keys
+* Start: 1
+* Coin: 3
+* A: z
+* B: x
+* C: a
+* D: s
   
-player two
+#### player two
 
-* directions: h,j,k,l
-* start: 2
-* coin: 4
-* a: y
-* b: u
-* c: i
-* d: o
+| Player Two |         |
+| ---------- | ------- |
+| Directions | h,j,k,l |
+| Start      | 2       |
+| Coin       | 4       |
+| A          | y       |
+| B          | u       |
+| C          | i       |
+| D          | o       |
 
 ### Changing the controls
 
-The controls are defined in `gngeo/src/virtualfs/gngeorc`. They are defined using SDL key codes. Make changes, then `yarn build-gngeo` to get the changed gngeorc positioned for emscripten to consume it.
+The controls are defined in `gngeo/src/virtualfs/gngeorc`. 
+They are defined using SDL key codes. 
+Make changes, then `yarn build-gngeo` to get the changed gngeorc positioned for emscripten to consume it.
 
 # Building GNGeo for WASM
 
